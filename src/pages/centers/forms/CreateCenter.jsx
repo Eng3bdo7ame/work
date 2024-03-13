@@ -151,15 +151,13 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
         className={`overflow-y-auto overflow-x-hidden duration-200 ease-linear
         absolute top-1/2 -translate-x-1/2 -translate-y-1/2
         z-50 justify-center items-center ${modal ? "left-1/2" : "-left-[100%]"}
-        bg-black bg-opacity-40 w-full h-full `}
-      >
+        bg-black bg-opacity-40 w-full h-full `}>
         <div
           className={`CreateCenter p-4 w-full max-w-2xl pb-10 bg-white
            dark:bg-gray-800 rounded-r-lg duration-200 ease-linear
            ${modal ? "absolute left-0" : "absolute -left-[100%]"}
            h-screen overflow-auto`}
-          dir="rtl"
-        >
+          dir="rtl">
           {/* Modal content */}
           <div className="relative p-4 bg-white dark:bg-gray-800 sm:p-5">
             {/* Modal header */}
@@ -170,8 +168,7 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
               <button
                 type="button"
                 onClick={closeModal}
-                className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 mr-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-              >
+                className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 mr-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
                 <X size={18} weight="bold" />
                 <span className="sr-only">Close modal</span>
               </button>
@@ -182,8 +179,7 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear"
-                  >
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear">
                     الاسم
                   </label>
                   <input
@@ -206,8 +202,7 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
                 <div>
                   <label
                     htmlFor="phoneNumber"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear"
-                  >
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear">
                     الهاتف
                   </label>
                   <input
@@ -230,8 +225,7 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
                 <div>
                   <label
                     htmlFor="address"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear"
-                  >
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear">
                     العنوان
                   </label>
                   <input
@@ -256,8 +250,7 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
                     <div className="w-1/2">
                       <label
                         htmlFor="openTime"
-                        className="block mb-2 text-sm text-center font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear"
-                      >
+                        className="block mb-2 text-sm text-center font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear">
                         موعد الفتح
                       </label>
                       <input
@@ -279,8 +272,7 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
                     <div className="w-1/2">
                       <label
                         htmlFor="closeTime"
-                        className="block mb-2 text-sm text-center font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear"
-                      >
+                        className="block mb-2 text-sm text-center font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear">
                         موعد الاغلاق
                       </label>
                       <input
@@ -307,8 +299,7 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
                 <div>
                   <label
                     htmlFor="nationality"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear"
-                  >
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear">
                     المدير
                   </label>
                   <select
@@ -319,8 +310,7 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
                     dark:border-gray-600 dark:placeholder-gray-400 
                     dark:text-white outline-none 
                     focus:border-orange-400 dark:focus:border-orange-400
-                    duration-100 ease-linear"
-                  >
+                    duration-100 ease-linear">
                     <option selected="">اختر المدير</option>
                     {adminsData.map((admin, index) => (
                       <option value={admin.id} key={index}>
@@ -332,8 +322,7 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="description"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear"
-                  >
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear">
                     ملاحظات
                   </label>
                   <textarea
@@ -359,8 +348,7 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
                       className={`block mb-2 text-2xl font-medium 
                       text-gray-900 dark:text-white outline-none 
                       focus:border-gray-600 dark:focus:border-gray-100 
-                      duration-100 ease-linear`}
-                    >
+                      duration-100 ease-linear`}>
                       القاعات
                     </label>
                     <button
@@ -383,8 +371,7 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
                             },
                           ],
                         }))
-                      }
-                    >
+                      }>
                       <Plus size={18} weight="bold" />
                       إضافة قاعة جديدة
                     </button>
@@ -394,13 +381,11 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
                     <div
                       key={index}
                       className="grid gap-4 sm:grid-cols-2 border
-                      mb-3 p-4 rounded-md border-gray-300 dark:border-gray-600 shadow-md"
-                    >
+                      mb-3 p-4 rounded-md border-gray-300 dark:border-gray-600 shadow-md">
                       <div>
                         <label
                           htmlFor={`roomName${index}`}
-                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear"
-                        >
+                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear">
                           اسم القاعة
                         </label>
                         <input
@@ -421,8 +406,7 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
                       <div>
                         <label
                           htmlFor={`roomDescription${index}`}
-                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear"
-                        >
+                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear">
                           وصف القاعة
                         </label>
                         <input
@@ -442,8 +426,7 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
                       <div>
                         <label
                           htmlFor={`roomActualNumber${index}`}
-                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear"
-                        >
+                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear">
                           العدد الفعلي للقاعة
                         </label>
                         <input
@@ -463,8 +446,7 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
                       <div>
                         <label
                           htmlFor={`roomAdditionalNumber${index}`}
-                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear"
-                        >
+                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white outline-none focus:border-gray-600 dark:focus:border-gray-100 duration-100 ease-linear">
                           العدد الإضافي للقاعة
                         </label>
                         <input
@@ -488,8 +470,7 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
                           className="text-white bg-red-500 
                           hover:bg-red-700 focus:ring-4 focus:outline-none
                           focus:ring-red-300 font-medium rounded-lg
-                          text-sm px-4 py-2 text-center flex gap-2"
-                        >
+                          text-sm px-4 py-2 text-center flex gap-2">
                           <TrashSimple size={18} weight="bold" />
                           حذف القاعة
                         </button>
@@ -504,8 +485,7 @@ export default function CreateCenter({ closeModal, refreshData, role, modal }) {
                 bg-orange-600 hover:bg-orange-700 
                 outline-none font-medium rounded-md 
                 text-sm px-5 py-2.5 text-center 
-                ease-linear duration-100"
-              >
+                ease-linear duration-100">
                 <Plus size={18} weight="bold" />
                 إضافة سنتر
               </button>
